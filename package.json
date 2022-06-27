@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy:local": "docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d",
+    "deploy:prod": "docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d"
   },
   "keywords": [],
   "author": "",
