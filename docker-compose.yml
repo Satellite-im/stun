@@ -8,5 +8,3 @@ services:
         NODE_ENV: development 
     ports:
       - 3478:3478/udp
-    env_file:
-      - ./.env
